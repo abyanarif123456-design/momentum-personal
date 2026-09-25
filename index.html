@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -9,169 +9,127 @@
 <meta name="apple-mobile-web-app-title" content="MOMENTUM">
 <title>MOMENTUM — Gym & Health</title>
 <style>
-:root{--bg:#f4f6f8;--card:#fff;--text:#101828;--muted:#667085;--line:#e5e7eb;--accent:#111827;--soft:#eef2f6;--danger:#b42318}
-*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",Inter,system-ui,sans-serif}
-body{padding-bottom:88px}.app{max-width:720px;margin:auto;padding:env(safe-area-inset-top) 16px 24px}
-header{padding:22px 4px 12px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-size:25px;font-weight:850;letter-spacing:-.7px}.sub{color:var(--muted);font-size:12px;margin-top:2px}
-.iconbtn{border:0;background:var(--card);width:42px;height:42px;border-radius:14px;font-size:19px;box-shadow:0 2px 10px #1018280b}
-.page{display:none}.page.active{display:block}
-.hero{background:var(--accent);color:white;border-radius:24px;padding:22px;margin:8px 0 14px;box-shadow:0 12px 28px #10182818}
-.hero .eyebrow{opacity:.65;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px}.hero h1{font-size:28px;line-height:1.08;margin:8px 0}.hero p{margin:0;color:#d0d5dd;font-size:14px;line-height:1.5}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:15px;margin-bottom:10px}.metric{font-size:25px;font-weight:800}.label{font-size:12px;color:var(--muted);margin-top:3px}.section-title{font-size:16px;font-weight:800;margin:20px 2px 9px}
-.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.row+.row{margin-top:11px}
-.btn{border:0;border-radius:13px;padding:12px 14px;font-weight:750;background:var(--accent);color:#fff;font-size:14px}.btn.secondary{background:var(--soft);color:var(--text)}.btn.danger{background:#fef3f2;color:var(--danger)}
-.btn.full{width:100%;margin-top:8px}.small{font-size:12px;color:var(--muted)}
-input,select{width:100%;padding:12px 13px;border:1px solid var(--line);border-radius:12px;background:#fff;font:inherit;color:var(--text);outline:none}input:focus,select:focus{border-color:#98a2b3}
-.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{margin-bottom:10px}.field label{display:block;font-size:12px;font-weight:700;margin:0 0 6px}
-.exercise{border:1px solid var(--line);border-radius:15px;padding:12px;margin-top:9px;background:#fcfcfd}.exercise-head{display:flex;justify-content:space-between;align-items:center;font-weight:800}
-.setrow{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:6px;margin-top:8px}.setrow input{padding:9px;font-size:13px}.remove{border:0;background:#fef3f2;color:#b42318;border-radius:10px;padding:0 10px}
-.badge{display:inline-flex;padding:5px 8px;border-radius:999px;background:var(--soft);font-size:11px;font-weight:750}
-.bar{height:8px;background:var(--soft);border-radius:99px;overflow:hidden}.bar>i{display:block;height:100%;background:var(--accent);border-radius:99px}
-.nav{position:fixed;z-index:20;left:50%;transform:translateX(-50%);bottom:0;width:min(720px,100%);padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:#ffffffee;backdrop-filter:blur(18px);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr)}
-.nav button{border:0;background:none;color:#98a2b3;font-size:10px;font-weight:750;padding:5px 0}.nav button b{display:block;font-size:20px;line-height:22px;margin-bottom:2px}.nav button.active{color:var(--accent)}
-.toast{position:fixed;left:50%;transform:translateX(-50%) translateY(20px);bottom:90px;background:#101828;color:#fff;padding:11px 15px;border-radius:12px;font-size:13px;opacity:0;pointer-events:none;transition:.2s;z-index:30}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-.empty{padding:24px 8px;text-align:center;color:var(--muted);font-size:13px}.history-item{padding:12px 0;border-bottom:1px solid var(--line)}.history-item:last-child{border-bottom:0}
+:root{--bg:#f4f6f8;--card:#fff;--text:#101828;--muted:#667085;--line:#e4e7ec;--accent:#111827;--soft:#eef2f6;--danger:#b42318;--good:#067647}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",Inter,system-ui,sans-serif}
+body{padding-bottom:94px}.app{max-width:760px;margin:auto;padding:env(safe-area-inset-top) 16px 24px}
+header{padding:20px 4px 10px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:26px;font-weight:900;letter-spacing:-.8px}.sub{font-size:12px;color:var(--muted);margin-top:2px}
+.iconbtn{border:0;background:var(--card);width:43px;height:43px;border-radius:14px;font-size:20px;box-shadow:0 3px 14px #1018280c}
+.page{display:none}.page.active{display:block}.hero{background:var(--accent);color:#fff;border-radius:25px;padding:23px;margin:8px 0 14px}.eyebrow{opacity:.65;font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}.hero h1{font-size:29px;line-height:1.08;margin:8px 0}.hero p{margin:0;color:#d0d5dd;font-size:14px;line-height:1.5}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:15px;margin-bottom:10px}.metric{font-size:25px;font-weight:850}.label,.small{font-size:12px;color:var(--muted)}.section-title{font-size:17px;font-weight:850;margin:20px 2px 9px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.row+.row{margin-top:11px}.btn{border:0;border-radius:13px;padding:12px 14px;font-weight:800;background:var(--accent);color:#fff;font-size:14px}.btn.secondary{background:var(--soft);color:var(--text)}.btn.danger{background:#fef3f2;color:var(--danger)}.btn.full{width:100%;margin-top:8px}
+input,select{width:100%;padding:12px 13px;border:1px solid var(--line);border-radius:12px;background:#fff;font:inherit;color:var(--text);outline:none}input:focus,select:focus{border-color:#98a2b3}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{margin-bottom:10px}.field label{display:block;font-size:12px;font-weight:750;margin:0 0 6px}
+.exercise{border:1px solid var(--line);border-radius:15px;padding:12px;margin-top:9px;background:#fcfcfd}.exercise-head{display:flex;justify-content:space-between;align-items:center;font-weight:850}.setrow{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:6px;margin-top:8px}.setrow input{padding:9px;font-size:13px}.remove{border:0;background:#fef3f2;color:var(--danger);border-radius:10px;padding:0 10px}
+.badge{display:inline-flex;padding:5px 8px;border-radius:999px;background:var(--soft);font-size:11px;font-weight:800}.badge.good{background:#ecfdf3;color:var(--good)}.bar{height:8px;background:var(--soft);border-radius:99px;overflow:hidden}.bar>i{display:block;height:100%;background:var(--accent);border-radius:99px}
+.nav{position:fixed;z-index:20;left:50%;transform:translateX(-50%);bottom:0;width:min(760px,100%);padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:#ffffffee;backdrop-filter:blur(18px);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr)}.nav button{border:0;background:none;color:#98a2b3;font-size:10px;font-weight:800;padding:5px 0}.nav button b{display:block;font-size:20px;line-height:22px;margin-bottom:2px}.nav button.active{color:var(--accent)}
+.toast{position:fixed;left:50%;transform:translateX(-50%) translateY(20px);bottom:95px;background:#101828;color:#fff;padding:11px 15px;border-radius:12px;font-size:13px;opacity:0;pointer-events:none;transition:.2s;z-index:30}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.empty{padding:24px 8px;text-align:center;color:var(--muted);font-size:13px}.history-item{padding:12px 0;border-bottom:1px solid var(--line)}.history-item:last-child{border-bottom:0}.pr{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)}.pr:last-child{border-bottom:0}
+.chart{display:flex;align-items:end;gap:6px;height:130px;padding:8px 2px 0}.barcol{flex:1;display:flex;flex-direction:column;justify-content:end;align-items:center;height:100%}.barcol i{display:block;width:100%;max-width:28px;border-radius:7px 7px 3px 3px;background:var(--accent);min-height:3px}.barcol span{font-size:9px;color:var(--muted);margin-top:5px}
+.timer{font-size:38px;font-weight:900;text-align:center;padding:8px}.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 @media(min-width:600px){.grid{grid-template-columns:repeat(4,1fr)}}
 </style>
 </head>
 <body>
 <div class="app">
-<header>
-  <div><div class="brand">MOMENTUM</div><div class="sub">Gym & health tracker · personal edition</div></div>
-  <button class="iconbtn" onclick="exportData()">↗</button>
-</header>
+<header><div><div class="brand">MOMENTUM</div><div class="sub">Gym & health tracker · personal edition</div></div><button class="iconbtn" onclick="exportData()">↗</button></header>
 
 <main>
 <section id="home" class="page active">
-  <div class="hero">
-    <div class="eyebrow">Keep moving</div>
-    <h1 id="greeting">Your progress is still yours.</h1>
-    <p>Missed a session? No reset. No punishment. Just come back.</p>
-  </div>
-  <div class="grid">
-    <div class="card"><div class="metric" id="weekWorkouts">0</div><div class="label">workouts this week</div></div>
-    <div class="card"><div class="metric" id="weightMetric">—</div><div class="label">latest weight</div></div>
-    <div class="card"><div class="metric" id="sleepMetric">—</div><div class="label">latest sleep</div></div>
-    <div class="card"><div class="metric" id="consistencyMetric">0%</div><div class="label">weekly target</div></div>
-  </div>
-  <div class="section-title">This week</div>
-  <div class="card">
-    <div class="row"><span>Workout target</span><strong id="targetText">0 / 4</strong></div>
-    <div class="bar" style="margin-top:10px"><i id="targetBar" style="width:0%"></i></div>
-    <button class="btn full" onclick="go('workout')">Log a workout</button>
-  </div>
-  <div class="section-title">Momentum rule</div>
-  <div class="card"><strong>One missed day does not erase the week.</strong><p class="small">Your only job after a miss is to make the next useful choice.</p></div>
+<div class="hero"><div class="eyebrow">Keep moving</div><h1 id="greeting">Your progress is still yours.</h1><p>Missed a session? No reset. No punishment. Just come back.</p></div>
+<div class="grid">
+<div class="card"><div class="metric" id="weekWorkouts">0</div><div class="label">workouts this week</div></div>
+<div class="card"><div class="metric" id="weightMetric">—</div><div class="label">latest weight</div></div>
+<div class="card"><div class="metric" id="sleepMetric">—</div><div class="label">latest sleep</div></div>
+<div class="card"><div class="metric" id="consistencyMetric">0%</div><div class="label">weekly target</div></div>
+</div>
+<div class="section-title">This week</div><div class="card"><div class="row"><span>Workout target</span><strong id="targetText">0 / 4</strong></div><div class="bar" style="margin-top:10px"><i id="targetBar" style="width:0%"></i></div><button class="btn full" onclick="go('workout')">Log a workout</button></div>
+<div class="section-title">Momentum score</div><div class="card"><div class="row"><strong id="momentumScore">0</strong><span class="badge" id="scoreBadge">Start here</span></div><p class="small">A simple score based on training consistency, sleep and recent check-ins. It is a guide, not a judgment.</p></div>
+<div class="section-title">Quick actions</div><div class="card quick"><button class="btn secondary" onclick="go('workout')">🏋️ Workout</button><button class="btn secondary" onclick="go('health')">❤️ Check-in</button><button class="btn secondary" onclick="startTimer(60)">⏱ 60s</button></div>
 </section>
 
 <section id="workout" class="page">
-  <div class="section-title">Workout log</div>
-  <div class="card">
-    <div class="field"><label>Workout name</label><input id="workoutName" placeholder="e.g. Push Day"></div>
-    <div id="exerciseList"></div>
-    <button class="btn secondary full" onclick="addExercise()">+ Add exercise</button>
-    <button class="btn full" onclick="saveWorkout()">Save workout</button>
-  </div>
-  <div class="section-title">Recent workouts</div>
-  <div class="card" id="workoutHistory"></div>
+<div class="section-title">Workout log</div>
+<div class="card">
+<div class="field"><label>Workout name</label><input id="workoutName" placeholder="e.g. Push Day"></div>
+<div class="field"><label>Template</label><select id="template" onchange="loadTemplate()"><option value="">Choose a template…</option><option value="push">Push</option><option value="pull">Pull</option><option value="legs">Legs</option><option value="full">Full Body</option></select></div>
+<div id="exerciseList"></div>
+<button class="btn secondary full" onclick="addExercise()">+ Add exercise</button><button class="btn full" onclick="saveWorkout()">Save workout</button>
+</div>
+<div class="section-title">Rest timer</div><div class="card"><div class="timer" id="timer">01:00</div><div class="quick"><button class="btn secondary" onclick="startTimer(60)">60s</button><button class="btn secondary" onclick="startTimer(90)">90s</button><button class="btn secondary" onclick="startTimer(120)">120s</button></div></div>
+<div class="section-title">Recent workouts</div><div class="card" id="workoutHistory"></div>
 </section>
 
 <section id="health" class="page">
-  <div class="section-title">Daily health</div>
-  <div class="card">
-    <div class="formgrid">
-      <div class="field"><label>Date</label><input id="healthDate" type="date"></div>
-      <div class="field"><label>Weight (kg)</label><input id="healthWeight" type="number" step="0.1" placeholder="70.0"></div>
-      <div class="field"><label>Sleep (hours)</label><input id="healthSleep" type="number" step="0.1" placeholder="7.5"></div>
-      <div class="field"><label>Energy (1–10)</label><input id="healthEnergy" type="number" min="1" max="10" placeholder="7"></div>
-      <div class="field"><label>Stress (1–10)</label><input id="healthStress" type="number" min="1" max="10" placeholder="4"></div>
-      <div class="field"><label>Water (L)</label><input id="healthWater" type="number" step="0.1" placeholder="2.5"></div>
-      <div class="field"><label>Steps</label><input id="healthSteps" type="number" placeholder="8000"></div>
-    </div>
-    <button class="btn full" onclick="saveHealth()">Save daily check-in</button>
-  </div>
-  <div class="section-title">Health history</div>
-  <div class="card" id="healthHistory"></div>
+<div class="section-title">Daily health</div><div class="card">
+<div class="formgrid">
+<div class="field"><label>Date</label><input id="healthDate" type="date"></div><div class="field"><label>Weight (kg)</label><input id="healthWeight" type="number" step=".1" placeholder="70"></div>
+<div class="field"><label>Sleep (hours)</label><input id="healthSleep" type="number" step=".1" placeholder="7.5"></div><div class="field"><label>Energy (1–10)</label><input id="healthEnergy" type="number" min="1" max="10" placeholder="7"></div>
+<div class="field"><label>Stress (1–10)</label><input id="healthStress" type="number" min="1" max="10" placeholder="4"></div><div class="field"><label>Water (L)</label><input id="healthWater" type="number" step=".1" placeholder="2.5"></div>
+<div class="field"><label>Steps</label><input id="healthSteps" type="number" placeholder="8000"></div>
+</div><button class="btn full" onclick="saveHealth()">Save daily check-in</button></div>
+<div class="section-title">7-day overview</div><div class="card"><div class="chart" id="sleepChart"></div></div>
+<div class="section-title">Health history</div><div class="card" id="healthHistory"></div>
 </section>
 
 <section id="progress" class="page">
-  <div class="section-title">Progress</div>
-  <div class="grid">
-    <div class="card"><div class="metric" id="totalWorkouts">0</div><div class="label">total workouts</div></div>
-    <div class="card"><div class="metric" id="totalVolume">0</div><div class="label">latest volume (kg)</div></div>
-    <div class="card"><div class="metric" id="bestWeight">—</div><div class="label">heaviest logged set</div></div>
-    <div class="card"><div class="metric" id="avgSleep">—</div><div class="label">avg sleep (7 days)</div></div>
-  </div>
-  <div class="section-title">Recent activity</div>
-  <div class="card" id="progressHistory"></div>
+<div class="section-title">Progress</div><div class="grid">
+<div class="card"><div class="metric" id="totalWorkouts">0</div><div class="label">total workouts</div></div><div class="card"><div class="metric" id="totalVolume">0</div><div class="label">latest volume (kg)</div></div><div class="card"><div class="metric" id="bestWeight">—</div><div class="label">heaviest logged set</div></div><div class="card"><div class="metric" id="avgSleep">—</div><div class="label">avg sleep (7 days)</div></div>
+</div>
+<div class="section-title">Personal records</div><div class="card" id="prs"></div>
+<div class="section-title">Volume trend</div><div class="card"><div class="chart" id="volumeChart"></div></div>
+<div class="section-title">Activity</div><div class="card" id="progressHistory"></div>
 </section>
 
 <section id="profile" class="page">
-  <div class="section-title">Profile & settings</div>
-  <div class="card">
-    <div class="field"><label>Name</label><input id="profileName" placeholder="Your name"></div>
-    <div class="field"><label>Weekly workout target</label><select id="profileTarget"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></div>
-    <button class="btn full" onclick="saveProfile()">Save profile</button>
-  </div>
-  <div class="section-title">Backup</div>
-  <div class="card">
-    <button class="btn secondary full" onclick="exportData()">Export backup (.json)</button>
-    <label class="btn secondary full" style="display:block;text-align:center;cursor:pointer">Import backup
-      <input type="file" accept=".json,application/json" onchange="importData(event)" style="display:none">
-    </label>
-    <button class="btn danger full" onclick="resetAll()">Reset all data</button>
-  </div>
-  <div class="card"><strong>Privacy</strong><p class="small">This personal edition stores your data locally in this browser. There is no account or server.</p></div>
+<div class="section-title">Profile & settings</div><div class="card">
+<div class="field"><label>Name</label><input id="profileName" placeholder="Your name"></div><div class="field"><label>Weekly workout target</label><select id="profileTarget"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></div><button class="btn full" onclick="saveProfile()">Save profile</button></div>
+<div class="section-title">Backup</div><div class="card"><button class="btn secondary full" onclick="exportData()">Export backup (.json)</button><label class="btn secondary full" style="display:block;text-align:center;cursor:pointer">Import backup<input type="file" accept=".json,application/json" onchange="importData(event)" style="display:none"></label><button class="btn danger full" onclick="resetAll()">Reset all data</button></div>
+<div class="card"><strong>Privacy</strong><p class="small">Data is stored locally in this browser. No account and no server are required.</p></div>
 </section>
-</main>
-</div>
+</main></div>
 
-<nav class="nav">
-<button class="active" onclick="go('home',this)"><b>⌂</b>Home</button>
-<button onclick="go('workout',this)"><b>＋</b>Workout</button>
-<button onclick="go('health',this)"><b>♡</b>Health</button>
-<button onclick="go('progress',this)"><b>↗</b>Progress</button>
-<button onclick="go('profile',this)"><b>☻</b>Profile</button>
-</nav>
+<nav class="nav"><button class="active" onclick="go('home',this)"><b>⌂</b>Home</button><button onclick="go('workout',this)"><b>＋</b>Workout</button><button onclick="go('health',this)"><b>♡</b>Health</button><button onclick="go('progress',this)"><b>↗</b>Progress</button><button onclick="go('profile',this)"><b>☻</b>Profile</button></nav>
 <div id="toast" class="toast"></div>
 
 <script>
-const KEY='momentum_personal_v1';
+const KEY='momentum_personal_v2';
 const blank={profile:{name:'',target:4},workouts:[],health:[]};
-let db=load();
-function load(){try{return {...blank,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch(e){return structuredClone(blank)}}
+let db=load(), timerInt=null, timerLeft=0;
+function load(){try{const x=JSON.parse(localStorage.getItem(KEY)||'null');return x?{...blank,...x}:{...blank}}catch(e){return {...blank}}}
 function persist(){localStorage.setItem(KEY,JSON.stringify(db));render()}
 function today(){return new Date().toISOString().slice(0,10)}
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function go(id,btn){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));if(btn)btn.classList.add('active');else{const b=[...document.querySelectorAll('.nav button')].find(x=>x.textContent.toLowerCase().includes(id==='workout'?'workout':id));if(b)b.classList.add('active')}render()}
+function go(id,btn){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));if(btn)btn.classList.add('active');render()}
 function toast(t){const x=document.getElementById('toast');x.textContent=t;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),1800)}
-function addExercise(data={name:'',sets:[{reps:'',weight:'',rpe:''}]}){const list=document.getElementById('exerciseList');const wrap=document.createElement('div');wrap.className='exercise';wrap.innerHTML=`<div class="exercise-head"><span>Exercise</span><button class="remove" onclick="this.closest('.exercise').remove()">×</button></div><div class="field" style="margin-top:9px"><input class="exname" placeholder="e.g. Bench Press" value="${esc(data.name)}"></div><div class="sets"></div><button class="btn secondary" style="margin-top:8px" onclick="addSet(this)">+ Set</button>`;list.appendChild(wrap);data.sets.forEach(s=>addSet(wrap.querySelector('.btn'),s))}
-function addSet(btn,data={reps:'',weight:'',rpe:''}){const sets=btn.parentElement.querySelector('.sets');const row=document.createElement('div');row.className='setrow';row.innerHTML=`<input class="reps" type="number" placeholder="reps" value="${esc(data.reps)}"><input class="weight" type="number" step="0.5" placeholder="kg" value="${esc(data.weight)}"><input class="rpe" type="number" step="0.5" min="1" max="10" placeholder="RPE" value="${esc(data.rpe)}"><button class="remove" onclick="this.parentElement.remove()">×</button>`;sets.appendChild(row)}
+function addExercise(data={name:'',sets:[{reps:'',weight:'',rpe:''}]}){const list=document.getElementById('exerciseList'),w=document.createElement('div');w.className='exercise';w.innerHTML=`<div class="exercise-head"><span>Exercise</span><button class="remove" onclick="this.closest('.exercise').remove()">×</button></div><div class="field" style="margin-top:9px"><input class="exname" placeholder="e.g. Bench Press" value="${esc(data.name)}"></div><div class="sets"></div><button class="btn secondary" style="margin-top:8px" onclick="addSet(this)">+ Set</button>`;list.appendChild(w);data.sets.forEach(s=>addSet(w.querySelector('.btn'),s))}
+function addSet(btn,data={reps:'',weight:'',rpe:''}){const sets=btn.parentElement.querySelector('.sets'),r=document.createElement('div');r.className='setrow';r.innerHTML=`<input class="reps" type="number" placeholder="reps" value="${esc(data.reps)}"><input class="weight" type="number" step=".5" placeholder="kg" value="${esc(data.weight)}"><input class="rpe" type="number" step=".5" min="1" max="10" placeholder="RPE" value="${esc(data.rpe)}"><button class="remove" onclick="this.parentElement.remove()">×</button>`;sets.appendChild(r)}
+function loadTemplate(){const t=document.getElementById('template').value;if(!t)return;const names={push:['Bench Press','Overhead Press','Incline Dumbbell Press','Lateral Raise'],pull:['Lat Pulldown','Barbell Row','Seated Cable Row','Biceps Curl'],legs:['Squat','Romanian Deadlift','Leg Press','Leg Curl'],full:['Squat','Bench Press','Lat Pulldown','Romanian Deadlift']};document.getElementById('exerciseList').innerHTML='';(names[t]||[]).forEach(n=>addExercise({name:n,sets:[{reps:'',weight:'',rpe:''},{reps:'',weight:'',rpe:''},{reps:'',weight:'',rpe:''}]}))}
 function collectExercises(){return [...document.querySelectorAll('#exerciseList .exercise')].map(e=>({name:e.querySelector('.exname').value.trim(),sets:[...e.querySelectorAll('.setrow')].map(r=>({reps:+r.querySelector('.reps').value||0,weight:+r.querySelector('.weight').value||0,rpe:+r.querySelector('.rpe').value||0})).filter(s=>s.reps||s.weight||s.rpe)})).filter(e=>e.name)}
-function saveWorkout(){const ex=collectExercises();if(!ex.length)return toast('Add at least one exercise.');db.workouts.unshift({id:Date.now(),date:today(),name:document.getElementById('workoutName').value.trim()||'Workout',exercises:ex});document.getElementById('workoutName').value='';document.getElementById('exerciseList').innerHTML='';addExercise();persist();toast('Workout saved. Keep the momentum.')}
-function saveHealth(){const item={date:document.getElementById('healthDate').value||today(),weight:+document.getElementById('healthWeight').value||null,sleep:+document.getElementById('healthSleep').value||null,energy:+document.getElementById('healthEnergy').value||null,stress:+document.getElementById('healthStress').value||null,water:+document.getElementById('healthWater').value||null,steps:+document.getElementById('healthSteps').value||null};db.health=db.health.filter(x=>x.date!==item.date);db.health.unshift(item);persist();toast('Health check-in saved.')}
-function saveProfile(){db.profile.name=document.getElementById('profileName').value.trim();db.profile.target=+document.getElementById('profileTarget').value||4;persist();toast('Profile saved.')}
-function weekStart(){const d=new Date();const day=d.getDay();const diff=(day+6)%7;d.setDate(d.getDate()-diff);d.setHours(0,0,0,0);return d}
-function inThisWeek(date){const d=new Date(date+'T00:00:00');return d>=weekStart()}
-function calcVolume(w){return w.exercises.reduce((a,e)=>a+e.sets.reduce((b,s)=>b+(s.reps*s.weight),0),0)}
-function render(){const p=db.profile||blank.profile;document.getElementById('profileName').value=p.name||'';document.getElementById('profileTarget').value=p.target||4;
-const wk=db.workouts.filter(w=>inThisWeek(w.date)).length;document.getElementById('weekWorkouts').textContent=wk;document.getElementById('targetText').textContent=`${wk} / ${p.target||4}`;const pct=Math.min(100,Math.round(wk/(p.target||4)*100));document.getElementById('targetBar').style.width=pct+'%';document.getElementById('consistencyMetric').textContent=pct+'%';
-const h=db.health[0];document.getElementById('weightMetric').textContent=h?.weight?`${h.weight} kg`:'—';document.getElementById('sleepMetric').textContent=h?.sleep?`${h.sleep} h`:'—';
-document.getElementById('totalWorkouts').textContent=db.workouts.length;document.getElementById('totalVolume').textContent=db.workouts[0]?Math.round(calcVolume(db.workouts[0])).toLocaleString():'0';
-let best=0;db.workouts.forEach(w=>w.exercises.forEach(e=>e.sets.forEach(s=>best=Math.max(best,s.weight||0))));document.getElementById('bestWeight').textContent=best?best+' kg':'—';
+function saveWorkout(){const ex=collectExercises();if(!ex.length)return toast('Tambahkan minimal satu exercise.');db.workouts.unshift({id:Date.now(),date:today(),name:document.getElementById('workoutName').value.trim()||'Workout',exercises:ex});document.getElementById('workoutName').value='';document.getElementById('template').value='';document.getElementById('exerciseList').innerHTML='';addExercise();persist();toast('Workout tersimpan. Keep the momentum.')}
+function saveHealth(){const item={date:document.getElementById('healthDate').value||today(),weight:+document.getElementById('healthWeight').value||null,sleep:+document.getElementById('healthSleep').value||null,energy:+document.getElementById('healthEnergy').value||null,stress:+document.getElementById('healthStress').value||null,water:+document.getElementById('healthWater').value||null,steps:+document.getElementById('healthSteps').value||null};db.health=db.health.filter(x=>x.date!==item.date);db.health.unshift(item);persist();toast('Check-in tersimpan.')}
+function saveProfile(){db.profile.name=document.getElementById('profileName').value.trim();db.profile.target=+document.getElementById('profileTarget').value||4;persist();toast('Profile tersimpan.')}
+function weekStart(){const d=new Date(),day=d.getDay(),diff=(day+6)%7;d.setDate(d.getDate()-diff);d.setHours(0,0,0,0);return d}
+function inThisWeek(date){return new Date(date+'T00:00:00')>=weekStart()}
+function calcVolume(w){return w.exercises.reduce((a,e)=>a+e.sets.reduce((b,s)=>b+s.reps*s.weight,0),0)}
+function calcScore(){const wk=db.workouts.filter(w=>inThisWeek(w.date)).length,t=db.profile.target||4;const sleep=db.health.slice(0,7).filter(x=>x.sleep);const s=sleep.length?Math.min(100,(sleep.reduce((a,x)=>a+x.sleep,0)/sleep.length)/8*100):0;return Math.round(wk/t*60+s*.4)}
+function getPRs(){const m={};db.workouts.forEach(w=>w.exercises.forEach(e=>e.sets.forEach(s=>{if(s.weight&&(!m[e.name]||s.weight>m[e.name]))m[e.name]=s.weight})));return Object.entries(m).sort((a,b)=>b[1]-a[1])}
+function startTimer(sec){clearInterval(timerInt);timerLeft=sec;updateTimer();timerInt=setInterval(()=>{timerLeft--;updateTimer();if(timerLeft<=0){clearInterval(timerInt);navigator.vibrate?.([150,100,150]);toast('Rest selesai. Gas lagi.')}},1000)}
+function updateTimer(){const m=String(Math.floor(timerLeft/60)).padStart(2,'0'),s=String(timerLeft%60).padStart(2,'0');document.getElementById('timer').textContent=`${m}:${s}`}
+function chartBars(items,mode){const vals=items.map(x=>x.v||0),max=Math.max(...vals,1);return items.map(x=>`<div class="barcol"><i style="height:${Math.max(3,x.v/max*105)}px"></i><span>${esc(x.l)}</span></div>`).join('')}
+function render(){const p=db.profile||blank.profile;document.getElementById('profileName').value=p.name||'';document.getElementById('profileTarget').value=p.target||4;document.getElementById('greeting').textContent=p.name?`Keep going, ${p.name}.`:'Your progress is still yours.';
+const wk=db.workouts.filter(w=>inThisWeek(w.date)).length,pct=Math.min(100,Math.round(wk/(p.target||4)*100));document.getElementById('weekWorkouts').textContent=wk;document.getElementById('targetText').textContent=`${wk} / ${p.target||4}`;document.getElementById('targetBar').style.width=pct+'%';document.getElementById('consistencyMetric').textContent=pct+'%';
+const h=db.health[0];document.getElementById('weightMetric').textContent=h?.weight?`${h.weight} kg`:'—';document.getElementById('sleepMetric').textContent=h?.sleep?`${h.sleep} h`:'—';const score=calcScore();document.getElementById('momentumScore').textContent=score;document.getElementById('scoreBadge').textContent=score>=80?'Strong momentum':score>=50?'Building momentum':'Start here';
+document.getElementById('totalWorkouts').textContent=db.workouts.length;document.getElementById('totalVolume').textContent=db.workouts[0]?Math.round(calcVolume(db.workouts[0])).toLocaleString():'0';let best=0;db.workouts.forEach(w=>w.exercises.forEach(e=>e.sets.forEach(s=>best=Math.max(best,s.weight||0))));document.getElementById('bestWeight').textContent=best?best+' kg':'—';
 const last7=db.health.filter(x=>(Date.now()-new Date(x.date+'T00:00:00').getTime())<7*864e5).filter(x=>x.sleep);document.getElementById('avgSleep').textContent=last7.length?(last7.reduce((a,x)=>a+x.sleep,0)/last7.length).toFixed(1)+' h':'—';
-document.getElementById('workoutHistory').innerHTML=db.workouts.length?db.workouts.slice(0,8).map(w=>`<div class="history-item"><div class="row"><strong>${esc(w.name)}</strong><span class="badge">${w.date}</span></div><div class="small">${w.exercises.length} exercise${w.exercises.length!==1?'s':''} · ${Math.round(calcVolume(w)).toLocaleString()} kg volume</div></div>`).join(''):'<div class="empty">No workouts yet. Your first log starts here.</div>';
-document.getElementById('healthHistory').innerHTML=db.health.length?db.health.slice(0,8).map(x=>`<div class="history-item"><div class="row"><strong>${x.date}</strong><span class="badge">${x.weight?x.weight+' kg':'No weight'}</span></div><div class="small">Sleep ${x.sleep??'—'} h · Energy ${x.energy??'—'}/10 · Stress ${x.stress??'—'}/10 · Water ${x.water??'—'} L · Steps ${x.steps??'—'}</div></div>`).join(''):'<div class="empty">No health check-ins yet.</div>';
-document.getElementById('progressHistory').innerHTML=[...db.workouts.slice(0,5).map(w=>`<div class="history-item"><strong>Workout</strong> · ${esc(w.name)}<div class="small">${w.date} · ${Math.round(calcVolume(w)).toLocaleString()} kg volume</div></div>`),...db.health.slice(0,5).map(x=>`<div class="history-item"><strong>Health</strong> · ${x.date}<div class="small">Sleep ${x.sleep??'—'} h · Weight ${x.weight??'—'} kg</div></div>`)].slice(0,8).join('')||'<div class="empty">Your progress timeline will appear here.</div>';
-if(!document.querySelector('#exerciseList .exercise'))addExercise();
-document.getElementById('healthDate').value=document.getElementById('healthDate').value||today();
-}
-function exportData(){const blob=new Blob([JSON.stringify(db,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='momentum-backup-'+today()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
-function importData(ev){const f=ev.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result);if(!x.workouts||!x.health)throw 0;db=x;persist();toast('Backup imported.')}catch(e){toast('Invalid backup file.')}};r.readAsText(f)}
-function resetAll(){if(confirm('Reset all MOMENTUM data? This cannot be undone.')){db=structuredClone(blank);persist();toast('All data reset.')}}
-document.getElementById('greeting').textContent=(db.profile?.name?`Keep going, ${db.profile.name}.`:'Your progress is still yours.');
-render();
+document.getElementById('workoutHistory').innerHTML=db.workouts.length?db.workouts.slice(0,8).map(w=>`<div class="history-item"><div class="row"><strong>${esc(w.name)}</strong><span class="badge">${w.date}</span></div><div class="small">${w.exercises.length} exercise · ${Math.round(calcVolume(w)).toLocaleString()} kg volume</div></div>`).join(''):'<div class="empty">Belum ada workout.</div>';
+document.getElementById('healthHistory').innerHTML=db.health.length?db.health.slice(0,8).map(x=>`<div class="history-item"><div class="row"><strong>${x.date}</strong><span class="badge">${x.weight?x.weight+' kg':'No weight'}</span></div><div class="small">Sleep ${x.sleep??'—'} h · Energy ${x.energy??'—'}/10 · Stress ${x.stress??'—'}/10 · Water ${x.water??'—'} L · Steps ${x.steps??'—'}</div></div>`).join(''):'<div class="empty">Belum ada check-in.</div>';
+const days=[...Array(7)].map((_,i)=>{const d=new Date();d.setDate(d.getDate()-(6-i));const key=d.toISOString().slice(0,10),x=db.health.find(h=>h.date===key);return{v:x?.sleep||0,l:key.slice(5)}});document.getElementById('sleepChart').innerHTML=chartBars(days);
+const vols=db.workouts.slice(0,7).reverse().map(w=>({v:calcVolume(w),l:w.date.slice(5)}));document.getElementById('volumeChart').innerHTML=vols.length?chartBars(vols):'<div class="empty">Belum ada volume untuk digambar.</div>';
+const prs=getPRs();document.getElementById('prs').innerHTML=prs.length?prs.slice(0,10).map(x=>`<div class="pr"><span>${esc(x[0])}</span><strong>${x[1]} kg</strong></div>`).join(''):'<div class="empty">PR akan muncul setelah kamu mencatat weight.</div>';
+document.getElementById('progressHistory').innerHTML=[...db.workouts.slice(0,5).map(w=>`<div class="history-item"><strong>Workout</strong> · ${esc(w.name)}<div class="small">${w.date} · ${Math.round(calcVolume(w)).toLocaleString()} kg</div></div>`),...db.health.slice(0,5).map(x=>`<div class="history-item"><strong>Health</strong> · ${x.date}<div class="small">Sleep ${x.sleep??'—'} h · Weight ${x.weight??'—'} kg</div></div>`)].slice(0,8).join('')||'<div class="empty">Belum ada aktivitas.</div>';
+if(!document.querySelector('#exerciseList .exercise'))addExercise();document.getElementById('healthDate').value=document.getElementById('healthDate').value||today()}
+function exportData(){const blob=new Blob([JSON.stringify(db,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='momentum-backup-'+today()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+function importData(ev){const f=ev.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result);if(!x.workouts||!x.health)throw 0;db={...blank,...x};persist();toast('Backup berhasil diimport.')}catch(e){toast('File backup tidak valid.')}};r.readAsText(f)}
+function resetAll(){if(confirm('Reset semua data MOMENTUM?')){db={...blank};persist();toast('Data direset.')}}
+document.getElementById('healthDate').value=today();render();
 </script>
-</body>
-</html>
+</body></html>
